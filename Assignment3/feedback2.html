@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container py-5">
+
+    <h2 class="text-center mb-4">Feedback Form</h2>
+
+    <form action="#" method="post" class="row g-3">
+        <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="col-md-6">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="col-md-6">
+            <label for="rating" class="form-label">Rating</label>
+            <select class="form-select" id="rating" name="rating" required>
+                <option value="">Select Rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+        </div>
+
+        <div class="col-12">
+            <label for="question" class="form-label">Any Questions regarding product/service?</label>
+            <textarea class="form-control" id="question" name="question" rows="3" placeholder="Type your question here..." required></textarea>
+        </div>
+
+        <div class="col-12">
+            <label for="comments" class="form-label">Additional Comments (Optional)</label>
+            <textarea class="form-control" id="comments" name="comments" rows="3" placeholder="Enter your comments..."></textarea>
+        </div>
+
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+        </div>
+    </form>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
